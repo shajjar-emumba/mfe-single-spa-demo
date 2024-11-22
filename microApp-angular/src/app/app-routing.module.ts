@@ -15,10 +15,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () =>
-          import('./pages/products/products.module').then(
-            (m) => m.ProductsModule
-          ),
+        component: CardAngularComponent,
       },
     ],
   },
